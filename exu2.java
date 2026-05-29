@@ -12,9 +12,26 @@ public class exu2 {
     public static void main (String[]args){
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("Sistema logistico Empacadora Oro verde")
-        System.out.println("/nIngrese")
-        System.out.println("")
+        System.out.println("Sistema logistico Empacadora Oro verde");
+        System.out.println("/nIngrese el total de aguacates cosechados hoy");
+        System.out.println("");
+        long totalAguacates = entreda.nextlong();
+        System.out.println("Procesando distribucion");
+        long totalRejas = obtenerCociente(totalAguacates, AguacatesPR);
+        long aguacatesSueltos = obtenerResiduo(totalAguacates, AguacatesPR);
+        
+        long totalTarimas = obtenerCociente(totalRejas, RejasPT);
+        long rejasSobrantes = obtenerResiduo(totalRejas, RejasPT);
+
+        long contenedores = obtenerCociente(totalTarimas,TarimasPC);
+        long tarimasSobrantes = obtenerResiduo(totalTarimas,TarimasPC);
+
+        double ingresosContenedores = calcularIngreso(contenedores,PrecioConte);
+        double ingresosTarimas = calcularIngreso(tarimasSobrantes, )
+        
+
+
+
     }
 
 
